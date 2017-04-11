@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Дмитрий Нилов](https://up.htmlacademy.ru/htmlcss/17/user/133956).
-* Наставник: [Дмитрий Нилов](https://htmlacademy.ru/profile/id399815).
+* Наставник: [Александр Секунов](https://htmlacademy.ru/profile/id399815).
 
 ---
 
