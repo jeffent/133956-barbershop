@@ -25,6 +25,11 @@
     background-color: #000;
     width: 140px;
     height: 44px;
+}
+.btn:hover{
+    background-color: #663d15; 
+}
+.indent{
     margin-right: 20px;
 }
 /*HEADER*/
@@ -36,30 +41,54 @@
 .main-nav li{
     float: left;
     list-style: none;
+    font-size: 0;
+    padding: 0 20px;
 }
-.main-nav a,
-.login{
+.main-nav a{
     font-size: 16px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 72px;
-    margin: 0 20px;
+    padding: 26px 0;
+}
+.main-nav a:hover{
+    background-color: #242424;
+    -webkit-box-shadow: inset 0px -4px 0px #fff;
+    -moz-box-shadow: inset 0px -4px 0px #fff;
+    box-shadow: inset 0px -4px 0px #fff;
+
 }
 .main-nav li:hover{
     background-color: #242424;
 }
 .login{
     float: right;
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 72px;
+    padding-left: 48px;
+    padding-right: 20px;
 }
-.login::before{
+.login:before{
     content: '';
-    display: inline-block;
+    position: absolute;
+    top: 28px;
+    left: 15px;
     width: 18px;
     height: 16px;
-    padding-top: -5 px;
-    background-image: url('../img/icon-login.png');
+    background: url('../img/icon-login.png') no-repeat center;
+}
+.login:hover{
+    background-color: #242424;
+}
+.login:hover:before{
+    opacity: 0.3;
 }
 /*LOGO*/
 .main-logo{
@@ -149,12 +178,82 @@
 }
 input{
     margin-right: 20px;
-    width: 140px;
+    width: 120px;
     height: 39px;
     border: 2px #000 solid;
     margin-bottom: 20px;
+    padding-left: 15px;
+    outline: none;
 }
-::-webkit-input-placeholder {font-size: 14px; color:#000; line-height:24px; padding-left: 15px;}
-::-moz-placeholder          {font-size: 14px; color:#000; line-height:24px; padding-left: 15px;}/* Firefox 19+ */
-:-moz-placeholder           {font-size: 14px; color:#000; line-height:24px; padding-left: 15px;}/* Firefox 18- */
-:-ms-input-placeholder      {font-size: 14px; color:#000; line-height:24px; padding-left: 15px;
+input:focus,
+input:hover {
+    border-color: #663d15;
+}
+::-webkit-input-placeholder {font-size: 14px; color:#000; line-height:24px; text-transform: uppercase; }
+::-moz-placeholder          {font-size: 14px; color:#000; line-height:24px; text-transform: uppercase; }/* Firefox 19+ */
+:-moz-placeholder           {font-size: 14px; color:#000; line-height:24px; text-transform: uppercase; }/* Firefox 18- */
+:-ms-input-placeholder      {font-size: 14px; color:#000; line-height:24px; text-transform: uppercase; }
+.submit{
+    width: 304px;
+}
+/*FOOTER*/
+.footer{
+    margin-top: 30px;
+    height: 190px;
+    background-image: url('../img/footer.png');
+}
+.footer-item{
+    margin-top: 65px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px; 
+    color: #fff;
+}
+.footer-item:first-child{
+    margin-right: 100px;
+}
+.footer-item:last-child{
+    float: right;
+}
+.footer-find{
+    color: #fff
+}
+.footer-title{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.footer-social{
+    display: inline-block;
+    content: '';
+    width: 43px;
+    height: 43px;
+    margin-right: 6px;
+    font-size: 0;
+}
+.footer-social:last-child{
+    margin-right: 0;
+}
+.vk{
+    background: #070707 url('../img/footer-vk.png') no-repeat 0 -43px;
+}
+.facebook{
+    background: #070707 url('../img/footer-fb.png') no-repeat 0 -43px;
+}
+.inst{
+    background: #070707 url('../img/footer-inst.png') no-repeat 0 -43px;
+}
+.htmlacademy-link:hover{
+    color: #000;
+    background-color: #fff;
+}
+.vk:hover{
+   background: #fff url('../img/footer-vk.png') no-repeat 0 0;
+}
+.facebook:hover{
+   background: #fff url('../img/footer-fb.png') no-repeat 0 0;
+}
+.inst:hover{
+   background: #fff url('../img/footer-inst.png') no-repeat 0 0;
+}
