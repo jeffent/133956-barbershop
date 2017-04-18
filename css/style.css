@@ -43,6 +43,17 @@ body {
   width: 100%;
   background-color: #000000;
 }
+.logo-menu {
+  float: left;
+  min-width: 111px;
+  line-height: 72px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.logo-menu img {
+  display: inline-block;
+  vertical-align: middle;
+}
 .main-nav>ul {
   margin:0;
   padding: 0;
