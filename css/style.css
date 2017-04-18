@@ -6,14 +6,13 @@ body {
   line-height: 0;
   font-family: 'PT Sans Narrow', sans-serif;
 }
-body {
-  background: #070707 url('../img/tint1.png') no-repeat;
-}
 .container {
   margin: 0 auto;
   width: 960px;
 }
-.wrapper {  }
+.wrapper-index {
+   background: #070707 url('../img/tint1.png') no-repeat;
+}
 .clearfix:after {
   content: "";
   display: table;
