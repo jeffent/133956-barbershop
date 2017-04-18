@@ -61,7 +61,7 @@
           <article class="content-item clearfix">
             <h2>фотогалерея</h2>
             <figure class="content-gallery">
-              <img src="img/gallery-1.jpg" id="photo-gallery" alt="" width="286" height="164">
+              <img src="img/gallery-1.jpg" class="photo-gallery" alt="" width="286" height="164">
             </figure>
             <a href="#" class="btn prev indent">назад</a>
             <a href="#" class="btn next">вперед</a>
@@ -72,19 +72,27 @@
         <section class="content clearfix">
           <article class="content-item">
             <h2>контактная информация</h2>
-            <p>Барбершоп «БОРОДИНСКИЙ» <br>адрес: г. Санкт-Петербург, УЛ. Б. Конюшенная, д. 19/8 <br>телефон: +7 (495) 666-02-66</p><br> 
-            <p>время работы: ПН — ПТ: <br>С 10:00 ДО 22:00 <br>СБ — ВС: С 10:00 ДО 19:00</p><br>
-            <button href="#" class="btn indent">как проехать</button>
-            <button href="#" class="btn">обратная связь</button>
+            <p class="new-paragraph">Барбершоп «БОРОДИНСКИЙ» <br>адрес: г. Санкт-Петербург, УЛ. Б. Конюшенная, д. 19/8 <br>телефон: +7 (495) 666-02-66</p><br> 
+            <p class="new-paragraph">время работы: ПН — ПТ: <br>С 10:00 ДО 22:00 <br>СБ — ВС: С 10:00 ДО 19:00</p><br>
+            <a href="#" class="btn indent">как проехать</a>
+            <a href="#" class="btn">обратная связь</a>
           </article>
           <article class="content-item">
             <h2>записаться</h2>
-            <p>Укажите желаемую дату и мы свяжемся с Вами для подтверждения брони</p><br>
+            <p class="new-paragraph">Укажите желаемую дату и мы свяжемся с Вами для подтверждения брони</p><br>
             <form action="" method="post">
-              <input id="date" type="text" placeholder="Дата">
-              <input id="time" type="text" placeholder="Время">
-              <input id="name" type="text" placeholder="Ваше имя">
-              <input id="phone" type="tel" placeholder="Телефон">
+              <div class="form-item">
+                <input id="date" type="text" placeholder="Дата">
+              </div>
+              <div class="form-item">
+                <input id="time" type="text" placeholder="Время">
+              </div>
+              <div class="form-item">
+                <input id="name" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form-item">
+                <input id="phone" type="tel" placeholder="Телефон">
+              </div>
               <button class="btn submit" type="submit">отправить</button>
             </form>
           </article>
@@ -92,7 +100,7 @@
         <!--end CONTACTS-->
       </main>
       <!--begin FOOTER-->
-      <footer class="footer">
+      <footer class="footer clearfix">
         <div class="container">
           <section class="footer-item">
             <p>
