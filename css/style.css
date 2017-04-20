@@ -426,14 +426,43 @@ h1 {
   margin-right: 23px;
 }
 .catalog {
-  float: right;
+  float: left;
   width: 720px;
+  margin-left: 20px;
 }
 .catalog-group,
 .switch-catalog {
   float: left;
 }
-.catalog-group .catalog-item-1 {
+.catalog-info,
+.catalog-price {
+  float: left;
+}
+.catalog-item {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 3px rgb(221, 221, 221);
+}
+.catalog-item figure {
+  float: left;
+  width: 220px;
+  height: 165px;
+  margin: 0;
+}
+.catalog-item section {
+  float: left;
+  width: 100%;
+ }
+.price a,
+.price span {
+  display: inline-block;
+ }
+
+
+
+/*.catalog-group .catalog-item-1 {
   float: left;
   width: 220px;
   border: 1px solid red;
@@ -447,34 +476,4 @@ h1 {
 .catalog-group section.catalog-info,
  {
   float: left;
-}
-/*.catalog-item {
-  float: left;
-  width: 220px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px 3px rgb(221, 221, 221);
-  background-color: blue;
 }*/
-/*.catalog-item figure {
-  float: left;
-  width: 220px;
-  height: 165px;
-  margin: 0;
-  background-color: red;
-}
-.catalog-info,
-.price-item {
-  float: left;
-  background-color: blue;
-}*/
-/*
-.catalog-item section {
-  float: left;
-  display: block;
-  background-color: red;
- }
-.price a,
-.price span {
-  display: inline-block;
- }*/
