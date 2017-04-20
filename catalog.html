@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper-shop">
       <!--begin HEADER-->
       <header class="top-header clearfix">
         <div class="container">
+          <div class="logo-menu">
+            <a href="index.html"><img src="img/logo-menu.png" alt="barbershop"></a>
+          </div>
           <nav class="main-nav">
             <ul>
-              <li><a href="#">информация</a></li><li><a href="#">новости</a></li><li><a href="#">прайс-лист</a></li><li><a href="#">магазин</a></li><li><a href="#">контакты</a></li>
+              <li><a href="#">информация</a></li><li><a href="#">новости</a></li><li><a href="#">прайс-лист</a></li><li><a class="open-page" href="catalog.html">магазин</a></li><li><a href="#">контакты</a></li>
             </ul>
           </nav>
           <div class="user-block">
@@ -27,8 +30,117 @@
       </header>
       <!--end HEADER-->
       <main class="container" role="main">
- 
+        <h1>Средства для ухода</h1>
+        <!--begin BREADCRUMBS-->
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
+        </ul>
+        <!--end BREADCRUMBS-->
+        <div class="container clearfix">
+        <!--begin LEFT COLOUMN-->
+        <div class="select">
+          <form action="#">
+            <fieldset>
+              <legend>Производители</legend>
+              <label for="item-1"><input type="checkbox" id="item-1">baxter of california</label>
+              <label for="item-2"><input type="checkbox" id="item-2">mr natty</label>
+              <label for="item-3"><input type="checkbox" id="item-3">suavecito</label>
+              <label for="item-4"><input type="checkbox" id="item-4">malin+goetz</label>
+              <label for="item-5"><input type="checkbox" id="item-5">murray's</label>
+              <label for="item-6"><input type="checkbox" id="item-6">american crew</label>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров</legend>
+              <label for="shaving-accessories"><input type="radio" name="group-item" id="shaving-accessories">бритвенные принадлежности</label>
+              <label for="care-products"><input type="radio" name="group-item" id="care-products">средства для ухода</label>
+              <label for="accessories"><input type="radio" name="group-item" id="accessories">аксессуары</label>
+            </fieldset>
+            <input class="btn" type="submit" value="показать">
+          </form>
+        </div>
+        <!--end LEFT COLOUMN-->
+        <!--begin RIGHT COLOUMN-->
+        <div class="catalog">
+          <div class="catalog-group">
+            <article class="catalog-item-1 clearfix">
+              <figure class="catalog-image"></figure>
+              <section class="catalog-info">info</section>
+              <section catalog="catalog-price">2900</section>
+            </article>
+            <article class="catalog-item clearfix">
+              <figure>
+                <!--<img src="http://placehold.it/220x165" alt="">-->
+              </figure>
+              <section class="catalog-info">
+                <p>Набор для путешествий</p>
+                <p>&laquo;baxter of california&raquo;</p>
+              </section>
+              <section class="price-item">
+                <span>2 900 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </section>
+            </article>
+            <article class="catalog-item">
+              <figure>
+                <img src="http://placehold.it/220x165" alt="">
+                <p>Увлажняющий кондиционер</p>
+                <p>&laquo;baxter of california&raquo;</p>
+                <span class="price-item">750 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </figure>
+            </article>
+            <article class="catalog-item">
+              <figure>
+                <img src="http://placehold.it/220x165" alt="">
+                <p>Гель для волос</p>
+                <p>&laquo;suavecito&raquo;</p>
+                <span class="price">290 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </figure>
+            </article>
+            <article class="catalog-item">
+              <figure>
+                <img src="http://placehold.it/220x165" alt="">
+                <p>Глинка для укладки волос</p>
+                <p>&laquo;american crew&raquo;</p>
+                <span class="price">500 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </figure>
+            </article>
+            <article class="catalog-item">
+              <figure>
+                <img src="http://placehold.it/220x165" alt="">
+                <p>Гель для волос</p>
+                <p>&laquo;american crew&raquo;</p>
+                <span class="price">300 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </figure>
+            </article>
+            <article class="catalog-item">
+              <figure>
+                <img src="http://placehold.it/220x165" alt="">
+                <p>Набор для бритья</p>
+                <p>&laquo;baxter of california&raquo;</p>
+                <span class="price">3 900 руб.</span>
+                <a href="#" class="btn-switch">Купить</a>
+              </figure>
+            </article>
+          </div>
+          <!--begin SWITCH BOTTON-->
+          <div class="switch-catalog">
+            <a href="#" class="btn-switch">1</a>
+            <a href="#" class="btn-switch switch-active">2</a>
+            <a href="#" class="btn-switch">3</a>
+            <a href="#" class="btn-switch">4</a>
+          </div>
+          <!--end SWITCH BOTTON-->
+        </div>
+        <!--end RIGHT COLOUMN-->
+        </div>
       </main>
+      </div>
       <!--begin FOOTER-->
       <footer class="footer clearfix">
         <div class="container">
@@ -52,6 +164,5 @@
         </div>
       </footer>
       <!--end FOOTER-->
-    </div>
   </body>
 </html>
