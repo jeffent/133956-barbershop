@@ -398,6 +398,7 @@ h1 {
 }
 .select {
   float:left;
+  width: 240px;
 }
 .select fieldset {
   margin: 0;
@@ -428,7 +429,6 @@ h1 {
 .catalog {
   float: left;
   width: 720px;
-  margin-left: 20px;
 }
 .catalog-group,
 .switch-catalog {
